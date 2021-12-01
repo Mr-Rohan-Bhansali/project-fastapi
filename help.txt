@@ -1,0 +1,17 @@
+Book                Student                 Inventory               Mangement
+id                  id                      id                      b_id          
+bookname            name                    bookid                  s_id        
+count               bookcount               quantity                id
+date                                        issued                  date
+
+b1 abc 3            s1 rohan 2              1 b1  5   3               b1 s1, b1 s2 ,b1 s3      
+b2 xyz 3            s2 vasun 2              2 b2  3   3               b2 s1, b2 s2, b2 s3
+b3 pqr 1            s3 chhot 3              3 b3  2   1               b3 s3
+----------------------newSchema---------------------
+Student                 Inventory               Mangement
+id                      id                      b_id          
+name                    name                    s_id        
+bookcount               quantity                id
+                        date                    date
+                        issued                  ret
+                        count
