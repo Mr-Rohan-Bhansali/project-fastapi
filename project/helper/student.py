@@ -1,6 +1,6 @@
 from fastapi.exceptions import HTTPException
 from starlette import status
-from app.orm.models import Student
+from project.orm.models import Student
 
 
 def add_student(r_body, db):

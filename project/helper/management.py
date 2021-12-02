@@ -2,7 +2,7 @@ from datetime import datetime
 from fastapi.exceptions import HTTPException
 from sqlalchemy.sql.expression import and_
 from starlette import status
-from app.orm.models import Inventory, Student, Management
+from project.orm.models import Inventory, Student, Management
 
 
 def allotBook(r_body, db):

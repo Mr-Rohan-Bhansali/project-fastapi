@@ -3,9 +3,9 @@ from fastapi import APIRouter, status
 from fastapi.param_functions import Depends
 from sqlalchemy.orm.session import Session
 
-from app import schema
-from app.helper.book import add_book, all_book, get_book, update_book
-from app.orm.database import get_db
+from project import schema
+from project.helper.book import add_book, all_book, get_book, update_book
+from project.orm.database import get_db
 router = APIRouter(tags=['Book'], prefix='/book')
 
 
@@ -25,7 +25,7 @@ def get_one(id: int, db: Session = Depends(get_db)):
 
 
 @router.put('/{id}', status_code=status.HTTP_202_ACCEPTED,response_model=schema.Inventory)
-def updateBlog(id: int, r_body: schema.QuantityAdd, db: Session = Depends(get_db)):
+def updateBook(id: int, r_body: schema.QuantityAdd, db: Session = Depends(get_db)):
     return update_book(id, r_body, db)
 
 

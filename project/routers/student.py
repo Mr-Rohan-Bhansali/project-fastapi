@@ -2,9 +2,9 @@ from typing import List
 from fastapi import APIRouter, status
 from fastapi.param_functions import Depends
 from sqlalchemy.orm.session import Session
-from app.helper.student import add_student, all_student, get_student
-from app import schema
-from app.orm.database import get_db
+from project.helper.student import add_student, all_student, get_student
+from project import schema
+from project.orm.database import get_db
 router = APIRouter(prefix='/student', tags=['Student'])
 
 

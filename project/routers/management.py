@@ -2,9 +2,9 @@ from typing import List
 from fastapi import APIRouter, status
 from fastapi.param_functions import Depends
 from sqlalchemy.orm.session import Session
-from app.helper.management import allotBook, returnBook, top_5_book
-from app import schema
-from app.orm.database import get_db
+from project.helper.management import allotBook, returnBook, top_5_book
+from project import schema
+from project.orm.database import get_db
 router = APIRouter(prefix='/manage', tags=['Management'])
 
 

@@ -2,7 +2,7 @@ from datetime import datetime
 from fastapi.exceptions import HTTPException
 from starlette import status
 
-from app.orm.models import Inventory
+from project.orm.models import Inventory
 
 
 def add_book(r_body, db):
