@@ -32,6 +32,14 @@ class Student(BaseModel):
     class Config:
         orm_mode = True
 
+class ShowManagement(BaseModel):
+    date:datetime
+    ret:bool
+    b_id:int
+    s_id:int
+    class Config:
+        orm_mode = True
+
 
 class ShowStudent(BaseModel):
     name: str
